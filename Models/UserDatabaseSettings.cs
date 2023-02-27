@@ -1,6 +1,6 @@
 namespace PatientRecordApi.Models;
 
-public class PatientRecordDatabaseSettings
+public class UserDatabaseSettings
 {
     public string ConnectionString { get; set; } = null!;
 

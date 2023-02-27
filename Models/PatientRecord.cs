@@ -3,7 +3,6 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace PatientRecordApi.Models;
 
-
 public class PatientRecord
 {
     [BsonId]

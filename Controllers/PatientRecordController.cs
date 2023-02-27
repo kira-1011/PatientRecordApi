@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PatientRecordApi.Models;
 using PatientRecordApi.Services;
@@ -6,6 +7,8 @@ namespace PatientRecordApi.Controllers;
 
 [ApiController]
 [Route("api/patientrecords")]
+
+[Authorize]
 public class PatientRecordController : ControllerBase
 {
     private readonly PatientRecordServices _patientRecordService;

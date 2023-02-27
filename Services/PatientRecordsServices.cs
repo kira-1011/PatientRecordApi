@@ -36,6 +36,7 @@ public class PatientRecordServices
     //Get patient records by name
     public async Task<List<PatientRecord>> GetByName(string name)
     {
+
         return await _patientRecords.Find(record => record.Name.IndexOf(name) > -1).ToListAsync();
     }
 
