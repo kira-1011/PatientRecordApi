@@ -20,17 +20,12 @@ public class PatientRecord
 
     [BsonElement("phoneNumber")]
     public string PhoneNumber { get; set; }
-
-    [BsonElement("screeningResult")]
-    public string ScreeningResult { get; set; }
-
-    public PatientRecord(string id, string name, uint age, string address, string phoneNumber, string ScreeningResult)
+    public PatientRecord(string id, string name, uint age, string address, string phoneNumber)
     {
         this.Id = id;
         this.Name = name;
         this.Age = age;
         this.Address = address;
         this.PhoneNumber = phoneNumber;
-        this.ScreeningResult = ScreeningResult;
     }
 }
